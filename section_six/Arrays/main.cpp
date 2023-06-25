@@ -57,7 +57,7 @@ int main()
         // prints a hexadecimal number it's the memory addres of where the array is located its referenced by name
         //c++ does this calculation that takes the name finds it and then looks to into the compund values of the array and look into it's indexes 
         //that's why when we try to look for test_scores[5] it's junk and makes a bad memory request(garbage memory)
-        cout << "\nNotice what the value of the array name is : " << test_scores << endl; 
+        cout << "\nNotice what the value of the array name is : " << test_scores << endl;
 
 
         cout << endl;
