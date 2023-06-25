@@ -51,7 +51,7 @@ int main()
         cout << "long long: " << LLONG_MAX << endl; // 9223372036854775807
     //
         // sizeof can also be used with variable names
-        cout << "===========sizeof(con vars)=============" << endl;
+        cout << "===========sizeof(with vars)=============" << endl;
 
         cout << "sizeof using variable names" << endl;
         int age {21};
