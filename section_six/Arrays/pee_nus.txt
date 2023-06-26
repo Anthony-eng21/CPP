@@ -1,5 +1,12 @@
 [all credit to [peenart](https://textart.sh/topic/peen)]                                
-                                                                    
+
+multi-dimensional arrs ([r: row][c: col])
+int movie_rating [3][4] 
+{ //structure
+  { 0, 4, 3, 5 }
+  { 0, 4, 3, 5 }
+  { 0, 4, 3, 5 }
+}    
                                 ▒▒▒▒▓▓                              
                               ▒▒░░▒▒░░░░                            
                               ▒▒▒▒▒▒▒▒▒▒                            
