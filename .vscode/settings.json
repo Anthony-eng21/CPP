@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.js": "javascript",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp"
     }
 }
