@@ -16,7 +16,7 @@ int main()
     //convert euros into dollars 
     dollars = euros * usd_per_eur;
 
-    cout << euros << "eur is equivalent to " << dollars << " dollars" << endl;
+    cout << euros << "euro is equivalent to " << dollars << " dollars" << endl;
     cout << endl;
     return 0;
 }

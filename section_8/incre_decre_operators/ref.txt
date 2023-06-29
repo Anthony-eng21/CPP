@@ -1,0 +1,38 @@
+/*psuedocode
+    Increment operator ++
+    Decrement operator --
+
+    Increments or decrements its operand by 1
+    Can be used with integers, floating point types and pointers
+
+    Prefix   ++num
+    Postfix      num++
+    
+    Don't overuse this operator!
+    ALERT!!! Never use it twice for the same variable in the same statement!!
+*/
+In C++, the pre-increment (++x) and pre-decrement (--x) operators, as well as the post-increment (x++) and post-decrement (x--) operators, are used to modify the value of a variable.
+
+The main difference between the pre and post operators is the order in which the increment or decrement operation is applied.
+
+Pre-increment and Pre-decrement:
+
+Syntax: ++x (pre-increment), --x (pre-decrement).
+Operation: The value of x is incremented or decremented before the expression is evaluated.
+Example:
+cpp code
+int x = 5;
+int y = ++x; // y will be 6, x will be 6
+Post-increment and Post-decrement:
+
+Syntax: x++ (post-increment), x-- (post-decrement).
+Operation: The value of x is incremented or decremented after the expression is evaluated.
+Example:
+cpp code
+int x = 5;
+int y = x++; // y will be 5, x will be 6
+The key distinction is when the actual increment or decrement takes place. Pre-increment/decrement modifies the value of the variable before it is used in the expression, while post-increment/decrement modifies the value after the expression is evaluated.
+
+Both pre and post operators can be useful in different scenarios. Pre-increment/decrement is often preferred when you want to modify the value before using it in an expression. Post-increment/decrement is commonly used when you need to use the original value of the variable in an expression and then modify it afterward.
+
+Remember that using these operators can have side effects and should be used with caution to avoid confusion and unintended consequences in your code.
