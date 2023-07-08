@@ -1,0 +1,10 @@
+Controlling program control 
+    * The building blocks of all algorithms:
+-Sequence
+    * Ordering statements sequentially
+
+-Selection
+    * Making decisions 
+
+-Iteration
+    * Looping or repeating code 
