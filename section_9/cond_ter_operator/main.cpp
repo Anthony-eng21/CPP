@@ -2,6 +2,7 @@
 
 // conditional operator
 //Usually found it in loops to loop over some specific data based off some condition 
+//remember sequence selection and iteration is all that programming is about.
 
 using namespace std;
 
