@@ -12,8 +12,8 @@ int main()
         left, right, up, down
     };
 
-    //heading is of type direction
-    Direction heading {left};
+    //heading is of type Direction
+    Direction heading {down};
 
     //this variable heading in the switch case could be any of the above constant cases. so they need to be included for best practice
     //or you can make an individual type for any of the constants

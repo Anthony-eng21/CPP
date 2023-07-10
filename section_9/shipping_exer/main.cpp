@@ -63,7 +63,7 @@ int main()
             cout << "adding tier 1 surcharge" << endl;
         }
 
-        cout << fixed << setprecision(2); //prints dollars nicely
+        cout << fixed << setprecision(2); //prints dollars nicely / The new precision. Sent to a stream object, this manipulator calls precision(__n) for that object.
         cout << "The volume of your package is: " << package_volume << endl;
         cout << "your package will cost $" << package_cost << " to ship." << endl;
     
