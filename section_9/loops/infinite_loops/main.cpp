@@ -21,10 +21,10 @@ int main()
     // } while (true);
     // return 0;
 
-    // INFINITE WHILE LOOP WITH STRATEGIC BREAK STATEMENT
+    // INFINITE WHILE LOOP WITH STRATEGIC BREAK STATEMENT THIS ONE WE CAN RUN LOL
     while(true) {
         char again{};
-        cout << "Do you wnat to loop again? (Y/N): ";
+        cout << "Do you want to loop again? (Y/N): ";
         cin >> again;
 
         if (again == 'N' || again == 'n')
