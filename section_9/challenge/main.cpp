@@ -10,7 +10,7 @@ int main()
 
     do
     {
-        // Display the menu unconditionally
+    // Display the menu unconditionally
         // a do while works great here
         cout << "\nP - Print numbers" << endl;
         cout << "A - Add a number" << endl;
@@ -22,11 +22,11 @@ int main()
         cout << "\nEnter your choice: ";
         cin >> selection;
 
-        // Selection logic starts here
-        // using character literals
+    // Selection logic starts here
+        // using character literals for user input not strings
         // using if else if ladder statement for our program flow
 
-        // print nums from our vector<int>numbers {} list
+    // print nums from our vector<int>numbers {} list
         if (selection == 'p' || selection == 'P')
         {
             if (numbers.size() == 0)                // nothing in the list
@@ -39,7 +39,7 @@ int main()
                 cout << "]" << endl;
             }
         }
-        // Add number into our number vec list
+    // Add number into our number vec list
         else if (selection == 'a' || selection == 'A')
         {
             int num_to_add{}; // var we read into that goes into the nuumbers vector
@@ -48,7 +48,7 @@ int main()
             numbers.push_back(num_to_add);          // write into the vector here with pushback
             cout << num_to_add << " added" << endl; // display some info when the num_to_add data was 'saved'
         }
-        // Calc Mean of nums in our list
+    // Calc Mean of nums in our list
         else if (selection == 'm' || selection == 'M')
         {
             if (numbers.size() == 0)
