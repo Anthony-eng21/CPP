@@ -8,13 +8,10 @@ int main()
 {
     vector<int> numbers{}; // users number list
     char selection{};      // user selection p, a, m, s, q, l operations
-    string username{};
     do
     {
         // Display the menu unconditionally
         // a do while works great here
-        cout << "Enter your username: ";
-        cin >> username;
         cout << "\nP - Print numbers" << endl;
         cout << "A - Add a number" << endl;
         cout << "M - Display a mean of the numbers" << endl;
@@ -65,6 +62,7 @@ int main()
                 for (auto num : numbers)
                     total += num; // get sum of the num(s) here in our numbers vec and add them together
                 // static cast here is really nice WE DONT WANT INT DIVISION
+                // cout << total << endl;
                 cout << "The mean is: " << static_cast<double>(total) / numbers.size() << endl;
             }
         }
@@ -99,7 +97,7 @@ int main()
         }
         else if (selection == 'q' || selection == 'Q')
         {
-            cout << "Goodbye " << username << endl;
+            cout << "Goodbye user " << endl;
         }
         //Illegal selection 
         else 
@@ -108,7 +106,6 @@ int main()
         }
 
     } while (selection != 'q' && selection != 'Q');
-
     cout << endl;
     return 0;
 }
