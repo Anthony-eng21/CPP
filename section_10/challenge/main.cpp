@@ -51,7 +51,7 @@ int main()
     // iterate through each character
     for (char c : secret_message)
     {
-        size_t position = alphabet.find(c); // find the character as it self in the right pos in alphabet or process as is
+        size_t position = alphabet.find(c); // Index of first occurrence. Starting from __pos, searches forward for __c within this string. If found, returns the index where it was found. If not found, returns npos.
         if (position != string::npos)       // found it in the alpabet and the string definitley has a position
         {
             // need a new character in the key
