@@ -1,5 +1,5 @@
 // Section 10
-// Challenge - 
+// Challenge -
 // Substitution Cipher
 
 /*
@@ -14,7 +14,7 @@ Encrypt this message using the substitution cipher and display the encrypted mes
 Then decryped the encrypted message back to the original message.
 
 You may use the 2 strings below for  your subsitition.
-For example, to encrypt you can replace the character at position n in alphabet 
+For example, to encrypt you can replace the character at position n in alphabet
 with the character at position n in key.
 
 To decrypt you can replace the character at position n in key
@@ -28,3 +28,64 @@ This could also be improved.
 Remember, the less code you write the less code you have to test!
 Reuse existing functionality in libraries and in the std::string class!
 */
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+
+    string alphabet{"[ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+    string key{" [XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr"};
+
+    string secret_message{};
+    cout << "Enter your secret message : ";
+    getline(cin, secret_message); // read the multi word string from our user input and read it
+
+    string encrypted_message{};
+
+    cout << "\nEncrypting message..." << endl;
+
+    // iterate through each character
+    for (char c : secret_message)
+    {
+        size_t position = alphabet.find(c); // find the character as it self in the right pos in alphabet or process as is
+        if (position != string::npos)       // found it in the alpabet and the string definitley has a position
+        {
+            // need a new character in the key
+            // initialize this variable as the new postion in the string
+            char new_char{key.at(position)};
+            encrypted_message += new_char;
+        }
+        else
+        {
+            encrypted_message += c; // add the character as is do not substitute i.e for symbols not included in the string like ' or ? etch
+        }
+    }
+
+    cout << "\nEncrypted message:" << encrypted_message << endl;
+
+    string decrypted_message{};
+    cout << "\nDecrypting message..." << endl;
+
+//same logic but flipped
+    for (char c : encrypted_message)
+    {
+        size_t position = key.find(c);
+        if (position != string::npos)
+        {
+            char new_char { alphabet.at(position) };
+            decrypted_message += new_char;
+        }
+        else
+        {
+            decrypted_message += c;
+        }
+    }
+    cout << "\nSecret message: " << decrypted_message << endl;
+
+    cout << endl;
+    return 0;
+}
