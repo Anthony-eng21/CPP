@@ -4,18 +4,30 @@
 #include <cmath>
 
 using namespace std;
+//Function Protos / Forward declarations (scope said "fuck it") later <std.h> including our own user made header files
+double calc_volume_cylinder(double radius, double height);
+double calc_area_circle(double); //when returning the type is necessary name of param is optional
+void area_circle(/*int*/); //error: too few arguments to function
+void volume_cylinder();
 
-const double pi{3.14159};
+const double pi = 3.14159;
 
-double calc_area_circle(double radius)
+int main()
 {
-    return pi * pow(radius, 2); // pi * radius ** 2
+    area_circle();     // pi * radius ** 2
+    volume_cylinder(); // pi * radius ** 2 * height
+    return 0;
 }
 
 double calc_volume_cylinder(double radius, double height)
 {
     // return pi * pow(radius, 2) * height;
     return calc_area_circle(radius) * height; // provided helper() no need to repeat code 🤬
+}
+
+double calc_area_circle(double radius)
+{
+    return pi * pow(radius, 2); // pi * radius ** 2
 }
 
 void area_circle()
@@ -42,12 +54,4 @@ void volume_cylinder()
          << height
          << " is "
          << calc_volume_cylinder(radius, height) << endl;
-}
-
-int main()
-{
-    area_circle();     // pi * radius ** 2
-    volume_cylinder(); // pi * radius ** 2 * height
-
-    return 0;
 }
