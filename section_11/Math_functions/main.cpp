@@ -15,13 +15,13 @@ int main()
     cin >> num;
 
     cout << "The sqrt of " << num << " is: " << sqrt(num) << endl;
-    cout << "The cube root of " << num << "is: " << cbrt(num) << endl;
+    cout << "The cube root of " << num << " is: " << cbrt(num) << endl;
 
-    cout << "The sine of " << num << "is: " << sin(num) << endl;
-    cout << "The cosine of " << num << "is: " << cos(num) << endl;
+    cout << "The sine of " << num << " is: " << sin(num) << endl;
+    cout << "The cosine of " << num << " is: " << cos(num) << endl;
 
-    cout << "The ceiling of: " << num << "is: " << ceil(num) << endl;
-    cout << "The floor of: " << num << "is: " << floor(num) << endl;
+    cout << "The floor of: " << num << " is: " << floor(num) << endl;
+    cout << "The ceiling of: " << num << " is: " << ceil(num) << endl;
 
     double power{};
 
