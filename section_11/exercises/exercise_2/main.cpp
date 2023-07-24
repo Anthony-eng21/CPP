@@ -15,6 +15,7 @@ void temperature_conversion(double fahrenheit_temperature) {
 
     //----DO NOT MODIFY THE CODE ABOVE THIS LINE----
     //----WRITE YOUR FUNCTION CALLS BELOW THIS LINE----
+
     
     double celsius_temperature = fahrenheit_to_celsius(fahrenheit_temperature);
     double kelvin_temperature = fahrenheit_to_kelvin(fahrenheit_temperature);
@@ -29,9 +30,20 @@ void temperature_conversion(double fahrenheit_temperature) {
 //----WRITE YOUR FUNCTION DEFINITIONS BELOW THIS LINE----
 
 double fahrenheit_to_celsius(double temperature) {
-    return round(((temperature - 32)*5) / 9);
+    return round(((temperature - 32) * 5) / 9);
 } 
 
 double fahrenheit_to_kelvin(double temperature) {
-    return round(((temperature - 32)*5) / 9 + 273); //pretty much the same just have to add 273
+    return round(((temperature - 32) * 5) / 9 + 273); //pretty much the same just have to add 273
+}
+
+int main() {
+    double fahrenheit_temperature;
+
+    cout << "Enter the temperature in Fahrenheit: ";
+    cin >> fahrenheit_temperature;
+
+    temperature_conversion(fahrenheit_temperature);
+
+    return 0;
 }
