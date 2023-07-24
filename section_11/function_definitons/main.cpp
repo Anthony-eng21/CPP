@@ -4,7 +4,7 @@
 #include <cmath>
 
 using namespace std;
-//Function Protos / Forward declarations (scope said "fuck it") later <std.h> including our own user made header files
+//Function Protos / Forward declarations (scope said "fuck it") later <std.h> including our own user made header files 
 double calc_volume_cylinder(double radius, double height);
 double calc_area_circle(double); //when returning the type is necessary name of param is optional
 void area_circle(/*int*/); //error: too few arguments to function
