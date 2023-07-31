@@ -2,47 +2,39 @@
 #include <cmath>
 using namespace std;
 
-//----DO NOT MODIFY THE CODE ABOVE THIS LINE----
-//----WRITE YOUR FUNCTION PROTOTYPES BELOW THIS LINE----
-
+// Function prototypes
 double fahrenheit_to_celsius(double);
 double fahrenheit_to_kelvin(double);
 
-//----WRITE YOUR FUNCTION PROTOTYPES ABOVE THIS LINE----
-//----DO NOT MODIFY THE CODE BELOW THIS LINE----
-
+// Function to convert temperature from Fahrenheit to Celsius and Kelvin
 void temperature_conversion(double fahrenheit_temperature) {
-
-    //----DO NOT MODIFY THE CODE ABOVE THIS LINE----
-    //----WRITE YOUR FUNCTION CALLS BELOW THIS LINE----
-
-    
+    // Call the conversion functions
     double celsius_temperature = fahrenheit_to_celsius(fahrenheit_temperature);
     double kelvin_temperature = fahrenheit_to_kelvin(fahrenheit_temperature);
-    
-    //----WRITE YOUR FUNCTION CALLS ABOVE THIS LINE----
-    //----DO NOT MODIFY THE CODE BELOW THIS LINE----
-    
-    cout << "The fahrenheit temperature " << fahrenheit_temperature << " degrees is equivalent to " << celsius_temperature << " degrees celsius and " << kelvin_temperature << " degrees kelvin.";
+
+    // Display the converted temperatures
+    cout << "The fahrenheit temperature " << fahrenheit_temperature << " degrees is equivalent to "
+         << celsius_temperature << " degrees celsius and " << kelvin_temperature << " degrees kelvin.";
 }
 
-//----DO NOT MODIFY THE CODE ABOVE THIS LINE----
-//----WRITE YOUR FUNCTION DEFINITIONS BELOW THIS LINE----
-
+// Function to convert temperature from Fahrenheit to Celsius
 double fahrenheit_to_celsius(double temperature) {
     return round(((temperature - 32) * 5) / 9);
 } 
 
+// Function to convert temperature from Fahrenheit to Kelvin
 double fahrenheit_to_kelvin(double temperature) {
-    return round(((temperature - 32) * 5) / 9 + 273); //pretty much the same just have to add 273
+    return round(((temperature - 32) * 5) / 9 + 273); // To convert to Kelvin, add 273 to Celsius
 }
 
 int main() {
-    double fahrenheit_temperature;
+    double fahrenheit_temperature; // Variable to store user input
 
+    // Prompt the user to enter the temperature in Fahrenheit
     cout << "Enter the temperature in Fahrenheit: ";
     cin >> fahrenheit_temperature;
 
+    // Call the function to convert and display the equivalent temperatures
     temperature_conversion(fahrenheit_temperature);
 
     return 0;
