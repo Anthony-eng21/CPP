@@ -1,7 +1,7 @@
 //ctrl + shift + b run build task 
 //right click on the exe that appears 
 //click on the integrated terminal
-// then type the path for the active executable we want to run 
+// then type the path for the built executable we want to run 
 // (.\main.exe)
 #include <iostream>
 using namespace std;

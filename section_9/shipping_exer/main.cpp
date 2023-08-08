@@ -16,7 +16,9 @@
 */
 
 #include <iostream>
-#include <iomanip> //allows us to 
+//allows us to manipulate the formatting and precision of input and output operations. 
+//This library is often used with the iostream library to control the appearance of numbers and text in the console.
+#include <iomanip> 
 
 using namespace std;
 
