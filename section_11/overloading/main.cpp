@@ -6,6 +6,7 @@
 
 using namespace std;
 
+//we can have multiple same functions they just have to return different types i.e ints doubles strings, vectors etc...
 void print(int);
 void print(double);
 void print(string);
